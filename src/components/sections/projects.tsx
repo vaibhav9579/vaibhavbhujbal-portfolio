@@ -5,6 +5,7 @@ import { projects } from "@/data/projects";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
 import { ProjectCover } from "@/components/sections/project-cover";
+import { ImpactStats } from "@/components/sections/impact-stats";
 
 export function Projects() {
   return (
@@ -32,7 +33,9 @@ export function Projects() {
                   </h3>
                   <p className="mt-3 text-base leading-relaxed text-muted">{project.tagline}</p>
 
-                  <div className="mt-5 flex flex-wrap gap-2">
+                  <ImpactStats items={project.impact} className="mt-6 max-w-md" />
+
+                  <div className="mt-6 flex flex-wrap gap-2">
                     {project.stack.map((tech) => (
                       <span
                         key={tech}

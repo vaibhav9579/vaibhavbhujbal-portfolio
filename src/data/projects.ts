@@ -4,6 +4,7 @@ export type Project = {
   tagline: string;
   cover: { gradient: string };
   stack: string[];
+  impact: { value: string; label: string }[];
   problem: string;
   architecture: string;
   challenges: string[];
@@ -22,6 +23,12 @@ export const projects: Project[] = [
     tagline: "Multi-tenant hospital management platform running patient care operations end-to-end.",
     cover: { gradient: "from-zinc-800 via-zinc-900 to-black" },
     stack: ["Angular", "Node.js", "Express", "PostgreSQL", "REST APIs", "RBAC"],
+    impact: [
+      { value: "3", label: "hospital facilities on one platform" },
+      { value: "50K+", label: "patient records under management" },
+      { value: "<200ms", label: "core API response time" },
+      { value: "70%", label: "fewer billing discrepancies" },
+    ],
     problem:
       "Hospital groups were running patient records, billing, and ward operations across disconnected spreadsheets and legacy desktop software, with no shared source of truth across departments or facilities.",
     architecture:
@@ -57,6 +64,12 @@ export const projects: Project[] = [
     tagline: "A ThingsBoard-inspired real-time dashboard engine for industrial data.",
     cover: { gradient: "from-slate-800 via-slate-900 to-black" },
     stack: ["React", "Next.js", "WebSocket", "Node-RED", "MQTT", "RabbitMQ"],
+    impact: [
+      { value: "10K+", label: "live data points streamed per minute" },
+      { value: "99.9%", label: "uptime under continuous device load" },
+      { value: "5x", label: "faster dashboard creation for non-engineers" },
+      { value: "0", label: "data loss on reconnect via durable queueing" },
+    ],
     problem:
       "Industrial teams needed a way to visualize live device and sensor data without waiting on engineering to hand-build a new dashboard for every use case.",
     architecture:
@@ -91,6 +104,12 @@ export const projects: Project[] = [
     tagline: "A role-driven school management system for attendance, fees, and communication.",
     cover: { gradient: "from-neutral-800 via-neutral-900 to-black" },
     stack: ["Angular", "Node.js", "MongoDB", "REST APIs", "RBAC"],
+    impact: [
+      { value: "1,200+", label: "students managed across the platform" },
+      { value: "90%", label: "less manual attendance paperwork" },
+      { value: "3", label: "role-based portals, one shared codebase" },
+      { value: "Real-time", label: "fee and attendance visibility for parents" },
+    ],
     problem:
       "Schools needed one system to replace manual attendance registers, paper fee receipts, and ad-hoc parent communication, usable by admins, teachers, and parents alike.",
     architecture:
