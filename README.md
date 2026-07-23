@@ -1,85 +1,54 @@
 # Vaibhav Bhujbal — Portfolio
 
-Personal portfolio website of Vaibhav Bhujbal, a web developer. This site showcases my skills, projects, and experience, and provides a way for visitors to get in touch.
+Personal portfolio of **Vaibhav Bhujbal**, Full Stack Developer / Angular Specialist / Enterprise Software Engineer. Built as a premium, single-page marketing site with a hidden internal architecture page.
 
-## Table of Contents
+## Stack
 
-- [About](#about)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Contact](#contact)
-- [License](#license)
-
-## About
-
-This repository contains the source code for my personal portfolio website — a single place to explore my work as a web developer, including featured projects, technical skills, and ways to connect with me.
-
-## Features
-
-- Responsive design that works across desktop, tablet, and mobile
-- About / Bio section highlighting skills and experience
-- Projects showcase with links to live demos and source code
-- Skills section covering languages, frameworks, and tools
-- Contact section / form for reaching out
-- Clean, fast-loading, and accessible UI
-
-## Tech Stack
-
-- HTML5, CSS3, JavaScript
-- Modern frontend tooling and frameworks (as adopted in this project)
-- Version control with Git & GitHub
+- **Next.js 16** (App Router, TypeScript, Turbopack)
+- **Tailwind CSS v4** for the design system
+- **Framer Motion** for scroll reveals, magnetic buttons, and micro-interactions
+- **GSAP** for the hero headline text reveal
+- **Lenis** for smooth scrolling
+- **React Three Fiber** for the subtle particle/grid hero background
+- **react-hook-form + zod** for the contact form
+- **next-themes** for dark/light mode (dark by default)
+- **lucide-react** and **react-icons** for iconography
 
 ## Getting Started
 
-### Prerequisites
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/) (if the project uses a JavaScript build tool)
-
-### Installation
-
-1. Clone the repository
-
-   ```bash
-   git clone https://github.com/vaibhav9579/vaibhavbhujbal-portfolio.git
-   cd vaibhavbhujbal-portfolio
-   ```
-
-2. Install dependencies (if applicable)
-
-   ```bash
-   npm install
-   ```
-
-3. Run the project locally
-
-   ```bash
-   npm start
-   ```
-
-   Or, if this is a static site, simply open `index.html` in your browser.
-
-## Project Structure
-
-```
-vaibhavbhujbal-portfolio/
-├── index.html        # Entry point
-├── src/               # Source files (styles, scripts, components)
-├── assets/            # Images, fonts, and other static assets
-└── README.md
+```bash
+npm install
+npm run dev
 ```
 
-*Structure will evolve as the project grows.*
+Open [http://localhost:3000](http://localhost:3000).
 
-## Contact
+```bash
+npm run build   # production build
+npm run start   # serve the production build
+npm run lint    # eslint
+```
 
-- Email: vaibhavbhujbal994@gmail.com
-- GitHub: [@vaibhav9579](https://github.com/vaibhav9579)
+## Structure
 
-Feel free to reach out for collaboration, freelance work, or just to say hi!
+```
+src/
+├── app/                # Routes: home, /projects/[slug], /architecture
+├── components/
+│   ├── ui/             # Design system primitives (button, reveal, counter, ...)
+│   ├── layout/          # Nav, footer, cursor, smooth scroll, theme
+│   ├── sections/        # Page sections (hero, projects, skills, ...)
+│   └── architecture/    # Diagrams used on the hidden /architecture page
+├── data/                # Content: profile, projects, skills, experience
+└── lib/                 # Shared utilities
+```
 
-## License
+## Content
 
-This project is licensed under the [MIT License](LICENSE).
+All copy lives in `src/data/*.ts` — update project case studies, skills, experience, and testimonials there without touching component code.
+
+## Resume
+
+`public/resume.pdf` is a placeholder — replace it with a real resume to power the "Download Resume" button.
+
+There's also a hidden, unlinked `/architecture` page covering system design, auth flow, role hierarchy, API flow, database schema, and deployment pipeline.
