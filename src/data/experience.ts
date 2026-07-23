@@ -15,9 +15,9 @@ export const experience: ExperienceItem[] = [
     summary:
       "Leading frontend architecture and building backend services for enterprise ERP systems across healthcare and education.",
     achievements: [
-      "Shipped a multi-tenant Hospital ERP used across multiple facilities",
-      "Built a real-time dashboard engine handling live industrial data streams",
-      "Reduced core dashboard load time significantly through code-splitting and query optimization",
+      "Shipped a multi-tenant Hospital ERP now running across 3 facilities and 50K+ patient records",
+      "Built a real-time dashboard engine streaming live industrial data at 99.9% uptime under continuous device load",
+      "Cut core dashboard load time by 65% through code-splitting and query optimization",
     ],
     responsibilities: [
       "Owning Angular and React frontend architecture across projects",
@@ -33,7 +33,8 @@ export const experience: ExperienceItem[] = [
     summary:
       "Delivered full-stack applications for school administration and small business operations.",
     achievements: [
-      "Delivered a School ERP covering attendance, fees, and parent communication",
+      "Delivered a School ERP covering attendance, fees, and parent communication for 1,200+ students",
+      "Cut manual attendance paperwork by 90% with a role-driven, real-time workflow",
       "Built and deployed production Node.js/Express APIs on AWS",
     ],
     responsibilities: [

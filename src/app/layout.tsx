@@ -63,6 +63,22 @@ export const viewport: Viewport = {
   themeColor: "#07080a",
 };
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: profile.name,
+  jobTitle: profile.titles[0],
+  description,
+  url: "https://vaibhavbhujbal.dev",
+  image: "https://vaibhavbhujbal.dev/opengraph-image",
+  sameAs: [profile.github, profile.linkedin],
+  knowsAbout: profile.titles,
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: profile.location,
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -75,6 +91,10 @@ export default function RootLayout({
       className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <SmoothScrollProvider>
             <CursorMount />
