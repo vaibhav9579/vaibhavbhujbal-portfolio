@@ -41,6 +41,7 @@ export const metadata: Metadata = {
     "React Developer",
     "Next.js Developer",
     "System Design",
+    "AI-Augmented Engineering",
   ],
   authors: [{ name: profile.name }],
   openGraph: {
@@ -80,6 +81,7 @@ const personJsonLd = {
     "Node.js",
     "System Design",
     "Enterprise Software Architecture",
+    "AI-Augmented Development",
   ],
 };
 
