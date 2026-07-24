@@ -37,7 +37,7 @@ export default async function ProjectCaseStudy(props: PageProps<"/projects/[slug
   if (!project) notFound();
 
   return (
-    <main className="mx-auto max-w-4xl px-6 pb-32 pt-32">
+    <main id="main-content" className="mx-auto max-w-4xl px-6 pb-32 pt-32">
       <Link
         href="/#projects"
         data-cursor-hover

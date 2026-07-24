@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { SmoothScrollProvider } from "@/components/layout/smooth-scroll-provider";
 import { CursorMount } from "@/components/layout/cursor-mount";
+import { ScrollProgress } from "@/components/layout/scroll-progress";
 import { profile } from "@/data/profile";
 
 const inter = Inter({
@@ -63,6 +64,25 @@ export const viewport: Viewport = {
   themeColor: "#07080a",
 };
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: profile.name,
+  jobTitle: profile.titles[0],
+  description,
+  email: profile.email,
+  url: "https://vaibhavbhujbal.dev",
+  sameAs: [profile.github, profile.linkedin],
+  knowsAbout: [
+    "Angular",
+    "React",
+    "Next.js",
+    "Node.js",
+    "System Design",
+    "Enterprise Software Architecture",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -75,8 +95,19 @@ export default function RootLayout({
       className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-foreground focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-background"
+        >
+          Skip to content
+        </a>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <SmoothScrollProvider>
+            <ScrollProgress />
             <CursorMount />
             {children}
           </SmoothScrollProvider>
