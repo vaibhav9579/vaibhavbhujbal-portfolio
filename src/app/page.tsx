@@ -7,6 +7,8 @@ import { Skills } from "@/components/sections/skills";
 import { Projects } from "@/components/sections/projects";
 import { Engineering } from "@/components/sections/engineering";
 import { TechStack } from "@/components/sections/tech-stack";
+import { AiToolkit } from "@/components/sections/ai-toolkit";
+import { OpenSource } from "@/components/sections/open-source";
 import { Experience } from "@/components/sections/experience";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Contact } from "@/components/sections/contact";
@@ -15,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1">
         <Hero />
         <Trust />
         <About />
@@ -23,6 +25,8 @@ export default function Home() {
         <Projects />
         <Engineering />
         <TechStack />
+        <AiToolkit />
+        <OpenSource />
         <Experience />
         <Testimonials />
         <Contact />

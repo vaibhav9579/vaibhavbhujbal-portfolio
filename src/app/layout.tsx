@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { SmoothScrollProvider } from "@/components/layout/smooth-scroll-provider";
 import { CursorMount } from "@/components/layout/cursor-mount";
+import { ScrollProgress } from "@/components/layout/scroll-progress";
 import { profile } from "@/data/profile";
 
 const inter = Inter({
@@ -40,6 +41,7 @@ export const metadata: Metadata = {
     "React Developer",
     "Next.js Developer",
     "System Design",
+    "AI-Augmented Engineering",
   ],
   authors: [{ name: profile.name }],
   openGraph: {
@@ -97,6 +99,7 @@ export default function RootLayout({
         />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <SmoothScrollProvider>
+            <ScrollProgress />
             <CursorMount />
             {children}
           </SmoothScrollProvider>
