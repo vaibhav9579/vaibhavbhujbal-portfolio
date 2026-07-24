@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { projects } from "@/data/projects";
 import { ProjectCover } from "@/components/sections/project-cover";
+import { ImpactStats } from "@/components/sections/impact-stats";
 import { Reveal } from "@/components/ui/reveal";
 
 export function generateStaticParams() {
@@ -69,6 +70,11 @@ export default async function ProjectCaseStudy(props: PageProps<"/projects/[slug
           ))}
         </div>
       </header>
+
+      <Reveal className="mt-12 rounded-2xl border border-border bg-surface p-8">
+        <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-muted">Impact at a glance</p>
+        <ImpactStats items={project.impact} size="large" />
+      </Reveal>
 
       <Block title="The Problem">{project.problem}</Block>
 

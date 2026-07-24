@@ -71,18 +71,14 @@ const personJsonLd = {
   name: profile.name,
   jobTitle: profile.titles[0],
   description,
-  email: profile.email,
   url: "https://vaibhavbhujbal.dev",
+  image: "https://vaibhavbhujbal.dev/opengraph-image",
   sameAs: [profile.github, profile.linkedin],
-  knowsAbout: [
-    "Angular",
-    "React",
-    "Next.js",
-    "Node.js",
-    "System Design",
-    "Enterprise Software Architecture",
-    "AI-Augmented Development",
-  ],
+  knowsAbout: profile.titles,
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: profile.location,
+  },
 };
 
 export default function RootLayout({
@@ -101,12 +97,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[200] focus:rounded-full focus:bg-foreground focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-background"
-        >
-          Skip to content
-        </a>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <SmoothScrollProvider>
             <ScrollProgress />
