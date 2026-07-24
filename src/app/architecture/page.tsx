@@ -37,7 +37,7 @@ function Section({
 
 export default function ArchitecturePage() {
   return (
-    <main className="mx-auto max-w-5xl px-6 pb-32 pt-32">
+    <main id="main-content" className="mx-auto max-w-5xl px-6 pb-32 pt-32">
       <Link
         href="/"
         data-cursor-hover
