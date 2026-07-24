@@ -1,131 +1,80 @@
 %PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 4 0 R >> >> /MediaBox [0 0 612 792] /Contents 5 0 R >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
 endobj
 5 0 obj
-<< /Length 1549 >>
+<<
+/Contents 9 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 8 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/PageMode /UseNone /Pages 8 0 R /Type /Catalog
+>>
+endobj
+7 0 obj
+<<
+/Author (Vaibhav Bhujbal) /CreationDate (D:20260724123427+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260724123427+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (Resume) /Title (Vaibhav Bhujbal - Full Stack Developer Resume) /Trapped /False
+>>
+endobj
+8 0 obj
+<<
+/Count 1 /Kids [ 5 0 R ] /Type /Pages
+>>
+endobj
+9 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 3484
+>>
 stream
-BT
-/F1 22 Tf
-72 720 Td
-(Vaibhav Bhujbal) Tj
-ET
-BT
-/F1 11 Tf
-72 698 Td
-(Full Stack Developer | Angular Specialist | Enterprise Software Engineer) Tj
-ET
-BT
-/F1 10 Tf
-72 676 Td
-(Email: vaibhavbhujbal994@gmail.com) Tj
-ET
-BT
-/F1 10 Tf
-72 660 Td
-() Tj
-ET
-BT
-/F1 13 Tf
-72 636 Td
-(EXPERIENCE) Tj
-ET
-BT
-/F1 10 Tf
-72 616 Td
-(Full Stack Developer, Angular Specialist - Enterprise Software Team \(2023 - Present\)) Tj
-ET
-BT
-/F1 9 Tf
-72 600 Td
-(- Built a multi-tenant Hospital ERP: role-based auth, patient/ward management, billing) Tj
-ET
-BT
-/F1 9 Tf
-72 586 Td
-(- Built a real-time Dashboard Builder \(ThingsBoard-inspired\) with WebSocket + Node-RED) Tj
-ET
-BT
-/F1 9 Tf
-72 572 Td
-(- Built a School ERP covering attendance, fees, and parent/teacher/admin portals) Tj
-ET
-BT
-/F1 9 Tf
-72 556 Td
-() Tj
-ET
-BT
-/F1 10 Tf
-72 540 Td
-(Full Stack Developer - Freelance / Contract Engineering \(2022 - 2023\)) Tj
-ET
-BT
-/F1 9 Tf
-72 524 Td
-(- Delivered production Node.js/Express APIs on AWS for school administration systems) Tj
-ET
-BT
-/F1 9 Tf
-72 508 Td
-() Tj
-ET
-BT
-/F1 13 Tf
-72 484 Td
-(SKILLS) Tj
-ET
-BT
-/F1 9 Tf
-72 466 Td
-(Angular, React, Next.js, TypeScript, Node.js, Express, MongoDB, PostgreSQL, MySQL,) Tj
-ET
-BT
-/F1 9 Tf
-72 452 Td
-(TailwindCSS, AWS, ASP.NET, REST APIs, WebSocket, RabbitMQ, MQTT, Node-RED, System Design) Tj
-ET
-BT
-/F1 9 Tf
-72 436 Td
-() Tj
-ET
-BT
-/F1 13 Tf
-72 412 Td
-(NOTE) Tj
-ET
-BT
-/F1 9 Tf
-72 394 Td
-(This is a placeholder resume generated for the portfolio site.) Tj
-ET
-BT
-/F1 9 Tf
-72 380 Td
-(Replace public/resume.pdf with your real resume PDF.) Tj
-ET
-endstream
+Gau0FgN)%<&q0LUoS[#G)MA+[md.hh&oH*[A6G^lh($)HJKY=="CPI[0pRgWdt8#o$+(h1/ltIe0pq4n3Silj9M@52cW'qPf0guB3dt_)C!g`_Ak2=:m$u)%(Z/Seq8eSm&%Y5W8GthUDtaK]%8V+Vd'NRSdZ%\U1^BhG`c,=--sF@#P\.H5k$;I#Ml\h?@!-boUH_53P7OEQkiBXJO!g^of/3@sZ[_MVTCK+&mCoi2HZoM(cV'YJE92tVX/0oZBUR[?kuJUtOl#ICr;dj.8+0@%UM1q=Dfd=EV&+e?U)UGrVie_f4V?'uPdW))2bp[9a*o5-0QLYpdpS<nM+HX8V<^bl26agDh.&SlhH&d.HFIj$^`L>k[Y<(3ptNn1B_SWHB;cf[(%-GqDWe(mlWe\P@HTku[;\:b%^;ePStj',5=E+nF[t:P)R=IK<BB<PO7Uc:DL_FpR-4>'UuV;dT^*]gcMVAN`-5H`"R#"2kZY-A7(07pE&KYYRmbLNU:06qW>e9*H.249k2TcY?GD!KX!uVQGj=+6B7MYN_;=i:;t#rqhhS(aBIj1&)OsJl.SK4ZcsL(.H8hEj-_E"]k;<-XEA>'(?\9bo"5PN1(`#ltS+CG<Hdru$Gg^B6fkWM'/<Dkk\D3SL=^ndJPuoff%_;bPW;VH/;FE7Y.lRlBIu3>W7^\PEE0*iH=!W0K+t:0*iiXTHRlHPrQkhtU/,Yj;Cuh-VdRe;<\:Li_(L5ihj!6t&Q=.$^(\>[h@p+6F]qHQP$K(eT]bG7<c0oRYJ4"$%,CDG^D^^PG9ZmNGJL<l;A%c%M>e_g"]I6Tm-c_SE51.-bKU7jeUdZ!5/)S`H6S8I2@_hO/5)a#W%\+b14AJVY:;+S_iB?-I,U.Ts-IPXe<#?@]dFG&SEL!7Hn76;Eb8_/'c-t?J&&/a?lXY*`o30I\OQ!,2l=`"gM0-;j?ot2^:/UWR_>2(l^#aLWFR"_46($QAabOt5Va9Nm6#q>[=75UZ>e@_>=Y?#-fX5F62Q")/qR5mF]9jR;U(%F;%R(Rdi&u;_73o*;C$&_7PU8+9.U/!%_T%bG^`,:mJi"W49bO&`H]!5C2EL3r@r)]-_5`>"#HCEXfYEku*NRR+gR:T@mRb8pW+%N7aOZ;lhQdOlQp]@(N8[ST^8*Sr3,6r!ZI4J/HJ,41nIfNWNK+l$?6C4ckZ(h;I$gmBUHb=7^%S[$`qnkaER9:o)kVShS=FUWqL*C55&F]$g&I>VaOjRQ/?G,AA1suP<lpLhW(,qO#n)^3oSVMeWVO!@Hp5@Ybr28cg6!=$)LW=/UA17V]9_Qi7X;<"qu+R77NZ4Yk?X'BVpi(D1LU1lKa?S-Nad4ZhsTM*r&i*$$+sfuep*Q`+cZ%JUcsj:=8M$'L<,1YA;%h)nT;cl5S_9+''5BcCgE+J)Yhg#l[o<9F=%X:V68+7Wut0'OdpkafB=FJQbh>]5&B`%JXnqk[gm*727(hloDKD0+LD3HB3Aa9T5m+)YYDp\`TPn_YnlrARp:>AnB.Xg'CffYLrdF+>c%&P.E_*9,JaSUFaAB&J=`<X6->RH6N.\MD8YS`W?R1N.?Fq$j3ofDc<WZJDd[OrIF*'X<N5R)9r4CM@#,`EZ^@%,^JG%qb6YU=$hae3W`@S6X-A!)Zq@>TnCHgl8J(Loh4J\2dM`kM?M5T9i6)rX.\Ru$&1`t)X,LI3H0`VbS(A0"T8olnr?,3o1^i^n@1k9d/Y]kJZm8MI!M8Ta+nOcC2?j1fq5t/Z7/`6!Ec,2rl:e/\NO^.*O*Nq@&PXHQQCQ[l*V?D`YL;n"s'C\g-f`D!n^E59#,XT^AZXSLFn`15L+B;ieW>9*>/<F@NHq9?\&Jk>mrk;,/ak:F!,M>.Y.(P?T1SR_jg>MtbsqHkMW*\VZ.']Cnq(#2T4X;bjE#sjTIG(J/DGBfreDU+h#p<c<Q,L:-q\o['3!O\!.!IVppFDK>ZS86-WT1>U5a_"a<V%-V@(j#E2A0W7B^7n6Aat`:nYt<oYa3cbkT9FYNV>&o.Q:3OYJo)L$LFT3D!Ke>u.<_Es`Q(FZc\E,P!C-ad,Cn:=*)C$lhIW]p4kk&5sp-6W03@AR&-j!Q;O4!c8)iqA5A`>:Ls!FEH4=UDDgDM9[P/4PWABK<f>Jjr<T.?Xb+P+C2-L.<!0Kd%^@]L<K<j7N2]ehn8d`NFE#Z+KQ&iRiNbGM#Kh`HcjNsZ!i7UK&BiO2@q"u?GBNkQo0QrlptB&QNa/IY32ducAh3^L;LD[2\6=6`ULoFFK>PZHb+0_=i7-\\'R9"&YS+G=dUSgVOTIF>Q[b`m9`sH`p:0W*;GuO2Xb0^0+NZ1Vr]b\3pqS[eTj`?f\sDpX%C)s*NEt[$70s>H9mc9Vej[TK!f>-Z4<>P#ro4L[YIs$NHgC+jXsf-a/IPZNk@[Qg<=@0M7[WtMs&DGB[5UDTt--VC)O.)NFm*E_`qb9GEJ+2YUYp6nrj@6;:TK*$ta&Z`a%*1>f58fN'ldb=bZpq?W2:d";tW&bY/H\j:+^7JBA+7-#lr1Wkok[a2P+o*L(2r'(jX'k+WCqmO'F=W&k#0ICp3*$DWGbIG/ORBPc!>%dc.jhu!IE,^ad.2D>i\&#U=IRj!ZL@c%NDBpnF8V5_,LWOIu[)%+uI[-Ra,l@i5u6k.f<<c&@5+.c^QB*7E-'<U/1H)Y@!_/?DE\bTf0?L?4H9NbX>[d$o>qI,er:kaZ0eG%G^q=o%i4sL@3O8.5_,ff0e>KT%;ZF?p\hN%TOXUu@4l`&.dOdk*hik\RDX"+.W7u'[Jqcpu`l^\uJcnP2.>/&EhkLXt_^jAlQGZ!#CX28;@0tL?PPpu>nK$(KM>GIseYE$H4Q/UF!D4p?4Eit>SN[c\J?I&E9/Di4ZV8O@SW^:_`3#4E-K-06,3U#op8,4$iPc%?X6EiFu/lj#7Qr`kV<k7Z?K/Ep%YF=kg<C)A5$?cb9*M#W.fg8\*TajDKAh.\<I)9d1iah)k+*AjQI+@p7CDaS)cr!gD#1\7&Xs4@Jdc+cUHTS\C,uFT(;36e1\9d#CJt2b%!r>'FYcA($H:AL;qWFF.hG3u]5Z5u1s1FMZN:H9"@9UA-s$$he6#g1=mPsgBVKAd8h\*Q@XI`)N9[P!-fB\[I]9l4`LFPko]"qlWc1FG]KfYdPAFlqs%r]Tb[.+"r1?J<%rT%u]^7JTDVg"cI>b6peP>@MSpsM"!=6^#T#oaujqSR1[aO,!p4,77WpOahh_ktjdZlBmi4HYXbV#6+2Xb@_5$!7%)fmTn(0!@1<`D1E(OTFK;c=rDMD]),=%<F"t%^%"eo$fY]bh-5ok1ANB1u8)(=W,"6lGXJthem>2ce]@+f=O!,4.RJc/'gK&?(fXoA0B?+aK5cKfio(tk\]h<p+Tn&'!]#_A]:T/.?tZ-8&^I-m8Yn%4_mCf#I^QW7$LNP:l\MYC(U\Tl%qhCXERB],-a\],D[R(>Np&J-4%<[5;7;t63~>endstream
 endobj
 xref
-0 6
+0 10
 0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000241 00000 n 
-0000000311 00000 n 
+0000000061 00000 n 
+0000000112 00000 n 
+0000000219 00000 n 
+0000000331 00000 n 
+0000000446 00000 n 
+0000000649 00000 n 
+0000000717 00000 n 
+0000001022 00000 n 
+0000001081 00000 n 
 trailer
-<< /Size 6 /Root 1 0 R >>
+<<
+/ID 
+[<0f88c3e21927cc348c4bb0ba757a6ab2><0f88c3e21927cc348c4bb0ba757a6ab2>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 7 0 R
+/Root 6 0 R
+/Size 10
+>>
 startxref
-1911
+4656
 %%EOF
