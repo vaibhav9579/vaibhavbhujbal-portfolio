@@ -7,6 +7,7 @@ export const profile = {
   github: "https://github.com/vaibhav9579",
   linkedin: "https://linkedin.com/in/vaibhavbhujbal",
   resumeUrl: "/resume.pdf",
+  photoUrl: "/profile-photo.svg",
   heroHeadline: "Building Enterprise Software That Scales.",
   heroSubheading:
     "I design and build high-performance business applications used in healthcare, education, and industrial environments.",

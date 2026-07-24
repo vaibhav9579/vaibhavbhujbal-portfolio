@@ -31,6 +31,19 @@ export function Hero() {
 
       <div className="relative mx-auto flex w-full max-w-6xl flex-col items-start">
         <motion.div
+          initial={{ opacity: 0, y: 10, scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          className="mb-6 lg:hidden"
+        >
+          <img
+            src={profile.photoUrl}
+            alt={profile.name}
+            className="h-20 w-20 rounded-full border border-border object-cover shadow-lg shadow-black/30"
+          />
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -96,10 +109,26 @@ export function Hero() {
       </div>
 
       <div className="pointer-events-none absolute inset-0 hidden lg:block">
-        <div className="absolute right-[6%] top-[26%]">
+        <motion.div
+          initial={{ opacity: 0, y: 24, scale: 0.96 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.9, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+          className="absolute right-[4%] top-[8%] h-[320px] w-[256px]"
+        >
+          <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-accent/20 blur-3xl" aria-hidden />
+          <div className="glass h-full w-full overflow-hidden rounded-[2rem] border border-border p-1.5 shadow-2xl shadow-black/40">
+            <img
+              src={profile.photoUrl}
+              alt={profile.name}
+              className="h-full w-full rounded-[1.6rem] object-cover"
+            />
+          </div>
+        </motion.div>
+
+        <div className="absolute right-[30%] top-[20%]">
           <FloatingCodeCard delay={1.3} title="rbac.guard.ts" />
         </div>
-        <div className="absolute bottom-[16%] right-[16%]">
+        <div className="absolute bottom-[12%] right-[2%]">
           <FloatingCodeCard
             delay={1.55}
             title="realtime.gateway.ts"
