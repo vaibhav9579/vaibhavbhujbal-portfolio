@@ -89,8 +89,9 @@ story.append(HRFlowable(width="100%", thickness=1.3, color=INK, spaceBefore=0, s
 # ---------- Summary ----------
 story += section_header("PROFESSIONAL SUMMARY")
 story.append(Paragraph(
-    "Full-stack engineer who owns systems end-to-end &mdash; architecture, delivery, and production outcomes &mdash; "
-    "for enterprise ERP and real-time platforms serving healthcare, education, and industrial clients. Track record: "
+    "Full-stack engineer who owns systems end-to-end &mdash; from stakeholder requirements through architecture, "
+    "delivery, and production outcomes &mdash; for enterprise ERP and real-time platforms serving healthcare, "
+    "education, and industrial clients. Track record: "
     "50K+ users, 99.9% uptime, sub-200ms APIs, and 60&ndash;70% cuts in load time, billing errors, and manual "
     "overhead, across 6+ organizations and 15+ production releases in 3+ years. Deep in Angular, React/Next.js, "
     "Node.js/Express, and multi-tenant architecture with API-level RBAC. <b>AI-augmented by design</b>: Claude, "
@@ -133,9 +134,9 @@ story.append(Paragraph("Full Stack Developer &mdash; Angular Specialist", styles
 story.append(Paragraph("Enterprise Software Team &nbsp;|&nbsp; 2023 &ndash; Present", styles["jobmeta"]))
 exp1 = [
     "Owned architecture and delivery of a multi-tenant Hospital ERP now running across 3 facilities and 50K+ patient records, enforcing RBAC at the API layer to close a class of authorization bugs at the source",
-    "Designed and led development of a real-time dashboard engine (WebSocket, MQTT, Node-RED, RabbitMQ) sustaining 99.9% uptime under continuous industrial device load",
-    "Diagnosed and eliminated core dashboard performance bottlenecks &mdash; cut load time 65% via code-splitting and query optimization while sustaining sub-200ms API response at scale",
+    "Designed, built, and performance-tuned a real-time dashboard engine (WebSocket, MQTT, Node-RED, RabbitMQ) &mdash; cut load time 65% via code-splitting and query optimization while sustaining 99.9% uptime and sub-200ms API response under continuous industrial device load",
     "Redesigned the billing engine into a configurable, rule-driven system, cutting billing discrepancies 70% and removing a recurring source of customer escalations",
+    "Partnered directly with hospital and plant-floor stakeholders to translate day-to-day operations into system architecture and product decisions, not just feature tickets",
     "Drove adoption of AI-augmented engineering (Claude, GitHub Copilot/Codex) across code review, refactors, and architecture exploration, compressing delivery cycles without sacrificing quality",
 ]
 for b in exp1:
