@@ -15,10 +15,10 @@ OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 
 doc = SimpleDocTemplate(
     OUT,
     pagesize=A4,
-    leftMargin=13 * mm,
-    rightMargin=13 * mm,
-    topMargin=9 * mm,
-    bottomMargin=8 * mm,
+    leftMargin=12 * mm,
+    rightMargin=12 * mm,
+    topMargin=6.5 * mm,
+    bottomMargin=5 * mm,
     title="Vaibhav Bhujbal - Full Stack Developer Resume",
     author="Vaibhav Bhujbal",
     subject="Resume",
@@ -32,71 +32,84 @@ styles["title"] = ParagraphStyle(
     "title", fontName="Helvetica", fontSize=11.3, leading=14, textColor=ACCENT, spaceAfter=2,
 )
 styles["contact"] = ParagraphStyle(
-    "contact", fontName="Helvetica", fontSize=8.7, leading=11.5, textColor=MUTED,
+    "contact", fontName="Helvetica", fontSize=8.6, leading=11, textColor=MUTED,
 )
 styles["section"] = ParagraphStyle(
-    "section", fontName="Helvetica-Bold", fontSize=10.4, leading=12.6, textColor=ACCENT,
-    spaceBefore=6, spaceAfter=2.4,
+    "section", fontName="Helvetica-Bold", fontSize=10.2, leading=12.2, textColor=ACCENT,
+    spaceBefore=3.5, spaceAfter=1.8,
 )
 styles["summary"] = ParagraphStyle(
-    "summary", fontName="Helvetica", fontSize=9, leading=12.1, textColor=INK, spaceAfter=0,
+    "summary", fontName="Helvetica", fontSize=8.85, leading=11.8, textColor=INK, spaceAfter=0,
 )
 styles["skillline"] = ParagraphStyle(
-    "skillline", fontName="Helvetica", fontSize=8.7, leading=11.6, textColor=INK, spaceAfter=2,
+    "skillline", fontName="Helvetica", fontSize=8.55, leading=11, textColor=INK, spaceAfter=1.5,
 )
 styles["jobtitle"] = ParagraphStyle(
     "jobtitle", fontName="Helvetica-Bold", fontSize=9.5, leading=12, textColor=INK, spaceAfter=0,
 )
 styles["jobmeta"] = ParagraphStyle(
-    "jobmeta", fontName="Helvetica-Oblique", fontSize=8.5, leading=11, textColor=MUTED, spaceAfter=2,
+    "jobmeta", fontName="Helvetica-Oblique", fontSize=8.5, leading=10.6, textColor=MUTED, spaceAfter=1.5,
 )
 styles["bullet"] = ParagraphStyle(
-    "bullet", fontName="Helvetica", fontSize=8.7, leading=11.6, textColor=INK,
-    leftIndent=10, bulletIndent=0, spaceAfter=1.2,
+    "bullet", fontName="Helvetica", fontSize=8.55, leading=11, textColor=INK,
+    leftIndent=10, bulletIndent=0, spaceAfter=0.8,
 )
 styles["projtitle"] = ParagraphStyle(
     "projtitle", fontName="Helvetica-Bold", fontSize=9.2, leading=11.5, textColor=INK, spaceAfter=0.5,
 )
 styles["projbody"] = ParagraphStyle(
-    "projbody", fontName="Helvetica", fontSize=8.6, leading=11.3, textColor=INK, spaceAfter=0,
+    "projbody", fontName="Helvetica", fontSize=8.55, leading=11, textColor=INK, spaceAfter=0,
 )
 styles["eduline"] = ParagraphStyle(
     "eduline", fontName="Helvetica", fontSize=8.85, leading=12, textColor=INK,
+)
+styles["highlight"] = ParagraphStyle(
+    "highlight", fontName="Helvetica-Bold", fontSize=8.5, leading=10.8, textColor=INK, spaceAfter=1,
 )
 
 def section_header(text):
     return [
         Paragraph(text, styles["section"]),
-        HRFlowable(width="100%", thickness=0.9, color=ACCENT, spaceBefore=0, spaceAfter=4.5),
+        HRFlowable(width="100%", thickness=0.9, color=ACCENT, spaceBefore=0, spaceAfter=3.5),
     ]
 
 story = []
 
 # ---------- Header ----------
 story.append(Paragraph("VAIBHAV BHUJBAL", styles["name"]))
-story.append(Paragraph("Full Stack Developer &bull; Angular Specialist &bull; Enterprise Software Engineer", styles["title"]))
+story.append(Paragraph("Full Stack Developer &bull; Angular, React/Next.js, Node.js &bull; Enterprise Systems Engineer", styles["title"]))
 story.append(Paragraph(
     "vaibhavbhujbal994@gmail.com &nbsp;|&nbsp; vaibhavbhujbal.dev &nbsp;|&nbsp; "
     "github.com/vaibhav9579 &nbsp;|&nbsp; linkedin.com/in/vaibhavbhujbal &nbsp;|&nbsp; India (Remote-Ready)",
     styles["contact"],
 ))
-story.append(Spacer(1, 3))
-story.append(HRFlowable(width="100%", thickness=1.3, color=INK, spaceBefore=0, spaceAfter=7))
+story.append(Spacer(1, 2))
+story.append(HRFlowable(width="100%", thickness=1.3, color=INK, spaceBefore=0, spaceAfter=5))
 
 # ---------- Summary ----------
 story += section_header("PROFESSIONAL SUMMARY")
 story.append(Paragraph(
-    "Full-stack engineer with 3+ years shipping enterprise-grade ERP and real-time systems for healthcare, "
-    "education, and industrial clients &mdash; 6+ organizations, 50K+ end users, 15+ production releases. "
-    "Specialist in Angular and React/Next.js on the frontend, Node.js/Express on the backend, and multi-tenant "
-    "architecture with API-level role-based access control (RBAC). "
-    "<b>AI-augmented developer</b>: uses Claude, GitHub Copilot/Codex, Gemini, and agentic IDE workflows daily "
-    "as core engineering infrastructure to ship production-grade code faster without cutting quality. "
-    "Consistently ties engineering decisions to measurable outcomes &mdash; sub-200ms APIs, 99.9% uptime, "
-    "60&ndash;70% reductions in load time and manual work.",
+    "Full-stack engineer who owns systems end-to-end &mdash; from stakeholder requirements through architecture, "
+    "delivery, and production outcomes &mdash; for enterprise ERP and real-time platforms serving healthcare, "
+    "education, and industrial clients. Track record: "
+    "50K+ users, 99.9% uptime, sub-200ms APIs, and 60&ndash;70% cuts in load time, billing errors, and manual "
+    "overhead, across 6+ organizations and 15+ production releases in 3+ years. Deep in Angular, React/Next.js, "
+    "Node.js/Express, and multi-tenant architecture with API-level RBAC. <b>AI-augmented by design</b>: Claude, "
+    "GitHub Copilot/Codex, and Gemini are standing infrastructure in the daily workflow, not experiments &mdash; "
+    "compounding delivery speed without trading off architectural rigor or code quality.",
     styles["summary"],
 ))
 story.append(Spacer(1, 2))
+
+highlights = [
+    "Architected multi-tenant systems live across 3 industries &mdash; 50K+ end users on shared infrastructure",
+    "99.9% uptime and sub-200ms APIs sustained under real production load, not benchmarks",
+    "60&ndash;70% cuts in load time, billing errors, and manual workflow across shipped systems",
+    "AI-augmented daily driver: Claude, GitHub Copilot/Codex, Gemini, and agentic IDE workflows",
+]
+for h in highlights:
+    story.append(Paragraph(f"&bull;&nbsp; {h}", styles["highlight"]))
+story.append(Spacer(1, 1.5))
 
 # ---------- Skills ----------
 story += section_header("TECHNICAL SKILLS")
@@ -120,21 +133,21 @@ story += section_header("PROFESSIONAL EXPERIENCE")
 story.append(Paragraph("Full Stack Developer &mdash; Angular Specialist", styles["jobtitle"]))
 story.append(Paragraph("Enterprise Software Team &nbsp;|&nbsp; 2023 &ndash; Present", styles["jobmeta"]))
 exp1 = [
-    "Shipped a multi-tenant Hospital ERP now running across 3 facilities and 50K+ patient records, with RBAC enforced at the API layer, not just the UI",
-    "Built a real-time dashboard engine (WebSocket, MQTT, Node-RED, RabbitMQ) streaming live industrial data at 99.9% uptime under continuous device load",
-    "Cut core dashboard load time by 65% through code-splitting and query optimization; sustained sub-200ms response on core API lookups",
-    "Reduced billing discrepancies by 70% by designing a configurable, rule-driven multi-facility billing engine",
-    "Embedded Claude and GitHub Copilot/Codex into the daily workflow for code review, refactors, and architecture exploration, compressing delivery cycles without sacrificing code quality",
+    "Owned architecture and delivery of a multi-tenant Hospital ERP now running across 3 facilities and 50K+ patient records, enforcing RBAC at the API layer to close a class of authorization bugs at the source",
+    "Designed, built, and performance-tuned a real-time dashboard engine (WebSocket, MQTT, Node-RED, RabbitMQ) &mdash; cut load time 65% via code-splitting and query optimization while sustaining 99.9% uptime and sub-200ms API response under continuous industrial device load",
+    "Redesigned the billing engine into a configurable, rule-driven system, cutting billing discrepancies 70% and removing a recurring source of customer escalations",
+    "Partnered directly with hospital and plant-floor stakeholders to translate day-to-day operations into system architecture and product decisions, not just feature tickets",
+    "Drove adoption of AI-augmented engineering (Claude, GitHub Copilot/Codex) across code review, refactors, and architecture exploration, compressing delivery cycles without sacrificing quality",
 ]
 for b in exp1:
     story.append(Paragraph(f"&bull;&nbsp; {b}", styles["bullet"]))
-story.append(Spacer(1, 2.5))
+story.append(Spacer(1, 1.8))
 
 story.append(Paragraph("Full Stack Developer", styles["jobtitle"]))
 story.append(Paragraph("Freelance / Contract Engineering &nbsp;|&nbsp; 2022 &ndash; 2023", styles["jobmeta"]))
 exp2 = [
-    "Delivered a School ERP for 1,200+ students across 3 role-based portals (admin, teacher, parent) on one shared codebase",
-    "Cut manual attendance paperwork by 90% with a real-time, role-driven attendance and fee workflow",
+    "Owned end-to-end delivery of a School ERP for 1,200+ students across 3 role-based portals (admin, teacher, parent) on one shared codebase",
+    "Redesigned attendance and fee workflows to be real-time and role-driven, cutting manual paperwork 90%",
     "Built and deployed production Node.js/Express REST APIs on AWS; designed schemas across MongoDB, PostgreSQL, and MySQL",
 ]
 for b in exp2:
@@ -157,15 +170,15 @@ projects = [
 for name, stack, body in projects:
     story.append(Paragraph(f"{name} &nbsp;<font color='#54585f' size=8>&mdash; {stack}</font>", styles["projtitle"]))
     story.append(Paragraph(body, styles["projbody"]))
-    story.append(Spacer(1, 3))
+    story.append(Spacer(1, 2))
 
-# ---------- Foundations / Engineering Practice ----------
-story += section_header("ENGINEERING FOUNDATIONS")
+# ---------- Engineering Philosophy ----------
+story += section_header("ENGINEERING PHILOSOPHY")
 story.append(Paragraph(
-    "Self-directed, project-first path through data structures, databases, and web fundamentals &mdash; into production "
-    "Angular/Node systems within the first year, and into multi-tenancy, RBAC, and real-time architecture by year two. "
-    "Ongoing practice: applying AI-assisted development (Claude, Copilot/Codex, Gemini) as a standing part of the "
-    "engineering process, from architecture drafts to code review.",
+    "Every system above is designed around one question: what breaks first at 10x the users, data, or edge cases? "
+    "Answering that early &mdash; not after an outage &mdash; is why these platforms run multi-tenant, real-time, "
+    "and role-audited by design, not by patch. Self-directed path from data structures straight into production "
+    "ownership.",
     styles["eduline"],
 ))
 

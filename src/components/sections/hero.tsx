@@ -1,31 +1,22 @@
 "use client";
 
-import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { ArrowDown, ArrowUpRight, FileDown } from "lucide-react";
 import { profile } from "@/data/profile";
 import { Button } from "@/components/ui/button";
 import { TextReveal } from "@/components/ui/text-reveal";
 import { FloatingCodeCard } from "@/components/sections/floating-code-card";
-
-const HeroBackground = dynamic(
-  () => import("@/components/sections/hero-background").then((m) => m.HeroBackground),
-  { ssr: false }
-);
+import { HeroVideo } from "@/components/sections/hero-video";
 
 export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden bg-grid px-6 pt-28 pb-16"
+      className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden px-6 pt-28 pb-16"
     >
-      <HeroBackground />
+      <HeroVideo src={profile.heroVideoUrl} poster={profile.heroVideoPoster} />
       <div
         className="pointer-events-none absolute inset-0 -z-[5] bg-gradient-to-b from-background via-transparent to-background"
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute left-1/2 top-1/3 -z-[5] h-[420px] w-[640px] -translate-x-1/2 rounded-full bg-accent/20 blur-[140px]"
         aria-hidden
       />
 

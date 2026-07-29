@@ -8,6 +8,8 @@ export const profile = {
   linkedin: "https://linkedin.com/in/vaibhavbhujbal",
   resumeUrl: "/resume.pdf",
   photoUrl: "/profile-photo.svg",
+  heroVideoUrl: "/hero-video.mp4",
+  heroVideoPoster: "/hero-video-poster.jpg",
   heroHeadline: "Building Enterprise Software That Scales.",
   heroSubheading:
     "I design and build high-performance business applications used in healthcare, education, and industrial environments.",
