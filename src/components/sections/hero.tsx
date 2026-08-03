@@ -72,7 +72,7 @@ export function Hero() {
             View Projects
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Button>
-          <Button href={profile.resumeUrl} variant="secondary" download>
+          <Button href={profile.resumeUrl} variant="secondary" download="Vaibhav-Bhujbal-FullStack-Developer-Resume.pdf">
             Download Resume
             <FileDown className="h-4 w-4" />
           </Button>
