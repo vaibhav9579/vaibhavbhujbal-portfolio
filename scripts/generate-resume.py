@@ -9,6 +9,10 @@ from reportlab.lib.styles import ParagraphStyle
 ACCENT = HexColor("#31408f")
 INK = HexColor("#16181c")
 MUTED = HexColor("#54585f")
+METRIC_HEX = "#0f7d6c"
+
+def hi(s):
+    return f'<b><font color="{METRIC_HEX}">{s}</font></b>'
 
 OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "public", "resume.pdf")
 
@@ -92,8 +96,8 @@ story.append(Paragraph(
     "Full-stack engineer who owns systems end-to-end &mdash; from stakeholder requirements through architecture, "
     "delivery, and production outcomes &mdash; for enterprise ERP and real-time platforms serving healthcare, "
     "education, and industrial clients. Track record: "
-    "50K+ users, 99.9% uptime, sub-200ms APIs, and 60&ndash;70% cuts in load time, billing errors, and manual "
-    "overhead, across 6+ organizations and 15+ production releases in 3+ years. Deep in Angular, React/Next.js, "
+    f"{hi('50K+')} users, {hi('99.9%')} uptime, {hi('sub-200ms')} APIs, and {hi('60&ndash;70%')} cuts in load time, billing errors, and manual "
+    f"overhead, across {hi('6+')} organizations and {hi('15+')} production releases in {hi('3+')} years. Deep in Angular, React/Next.js, "
     "Node.js/Express, and multi-tenant architecture with API-level RBAC. <b>AI-augmented by design</b>: Claude, "
     "GitHub Copilot/Codex, and Gemini are standing infrastructure in the daily workflow, not experiments &mdash; "
     "compounding delivery speed without trading off architectural rigor or code quality.",
@@ -102,9 +106,9 @@ story.append(Paragraph(
 story.append(Spacer(1, 2))
 
 highlights = [
-    "Architected multi-tenant systems live across 3 industries &mdash; 50K+ end users on shared infrastructure",
-    "99.9% uptime and sub-200ms APIs sustained under real production load, not benchmarks",
-    "60&ndash;70% cuts in load time, billing errors, and manual workflow across shipped systems",
+    f"Architected multi-tenant systems live across {hi('3 industries')} &mdash; {hi('50K+')} end users on shared infrastructure",
+    f"{hi('99.9%')} uptime and {hi('sub-200ms')} APIs sustained under real production load, not benchmarks",
+    f"{hi('60&ndash;70%')} cuts in load time, billing errors, and manual workflow across shipped systems",
     "AI-augmented daily driver: Claude, GitHub Copilot/Codex, Gemini, and agentic IDE workflows",
 ]
 for h in highlights:
@@ -133,9 +137,9 @@ story += section_header("PROFESSIONAL EXPERIENCE")
 story.append(Paragraph("Full Stack Developer &mdash; Angular Specialist", styles["jobtitle"]))
 story.append(Paragraph("Enterprise Software Team &nbsp;|&nbsp; 2023 &ndash; Present", styles["jobmeta"]))
 exp1 = [
-    "Owned architecture and delivery of a multi-tenant Hospital ERP now running across 3 facilities and 50K+ patient records, enforcing RBAC at the API layer to close a class of authorization bugs at the source",
-    "Designed, built, and performance-tuned a real-time dashboard engine (WebSocket, MQTT, Node-RED, RabbitMQ) &mdash; cut load time 65% via code-splitting and query optimization while sustaining 99.9% uptime and sub-200ms API response under continuous industrial device load",
-    "Redesigned the billing engine into a configurable, rule-driven system, cutting billing discrepancies 70% and removing a recurring source of customer escalations",
+    f"Owned architecture and delivery of a multi-tenant Hospital ERP now running across {hi('3 facilities')} and {hi('50K+')} patient records, enforcing RBAC at the API layer to close a class of authorization bugs at the source",
+    f"Designed, built, and performance-tuned a real-time dashboard engine (WebSocket, MQTT, Node-RED, RabbitMQ) &mdash; cut load time {hi('65%')} via code-splitting and query optimization while sustaining {hi('99.9%')} uptime and {hi('sub-200ms')} API response under continuous industrial device load",
+    f"Redesigned the billing engine into a configurable, rule-driven system, cutting billing discrepancies {hi('70%')} and removing a recurring source of customer escalations",
     "Partnered directly with hospital and plant-floor stakeholders to translate day-to-day operations into system architecture and product decisions, not just feature tickets",
     "Drove adoption of AI-augmented engineering (Claude, GitHub Copilot/Codex) across code review, refactors, and architecture exploration, compressing delivery cycles without sacrificing quality",
 ]
@@ -146,8 +150,8 @@ story.append(Spacer(1, 1.8))
 story.append(Paragraph("Full Stack Developer", styles["jobtitle"]))
 story.append(Paragraph("Freelance / Contract Engineering &nbsp;|&nbsp; 2022 &ndash; 2023", styles["jobmeta"]))
 exp2 = [
-    "Owned end-to-end delivery of a School ERP for 1,200+ students across 3 role-based portals (admin, teacher, parent) on one shared codebase",
-    "Redesigned attendance and fee workflows to be real-time and role-driven, cutting manual paperwork 90%",
+    f"Owned end-to-end delivery of a School ERP for {hi('1,200+')} students across {hi('3 role-based portals')} (admin, teacher, parent) on one shared codebase",
+    f"Redesigned attendance and fee workflows to be real-time and role-driven, cutting manual paperwork {hi('90%')}",
     "Built and deployed production Node.js/Express REST APIs on AWS; designed schemas across MongoDB, PostgreSQL, and MySQL",
 ]
 for b in exp2:
@@ -159,13 +163,13 @@ story += section_header("SELECTED PROJECTS")
 projects = [
     ("Hospital ERP", "Angular, Node.js, Express, PostgreSQL, REST APIs, RBAC",
      "Multi-tenant hospital management platform: patient records, ward/bed management, billing engine. "
-     "3 facilities live, 50K+ patient records, &lt;200ms core API response."),
+     f"{hi('3 facilities')} live, {hi('50K+')} patient records, {hi('&lt;200ms')} core API response."),
     ("Dashboard Builder", "React, Next.js, WebSocket, Node-RED, MQTT, RabbitMQ",
      "Drag-and-drop, ThingsBoard-style real-time dashboard engine for industrial device data. "
-     "10K+ live data points/min, 99.9% uptime, zero data loss via durable queueing."),
+     f"{hi('10K+')} live data points/min, {hi('99.9%')} uptime, zero data loss via durable queueing."),
     ("School ERP", "Angular, Node.js, MongoDB, REST APIs, RBAC",
      "Role-driven school management platform for attendance, fees, and parent communication. "
-     "1,200+ students, 90% less manual attendance paperwork."),
+     f"{hi('1,200+')} students, {hi('90%')} less manual attendance paperwork."),
 ]
 for name, stack, body in projects:
     story.append(Paragraph(f"{name} &nbsp;<font color='#54585f' size=8>&mdash; {stack}</font>", styles["projtitle"]))
